@@ -1,0 +1,1 @@
+--Make at least ten different sample queries
