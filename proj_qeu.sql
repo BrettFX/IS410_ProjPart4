@@ -1,3 +1,5 @@
+--IS410 Term Project (Deliverable 4)
+--By: Brett Allen, Akhil Naraparaju, and Justin Chan
 --Make at least ten different sample queries
 DROP VIEW Customer_Payment_Instersection;
 DROP VIEW Customer_Payment_Union;

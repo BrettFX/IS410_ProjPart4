@@ -1,5 +1,8 @@
---Create commands for creating all tables
+--IS410 Term Project (Deliverable 4)
+--By: Brett Allen, Akhil Naraparaju, and Justin Chan
+--This program create commands for creating all tables
 
+--Drop all tables that will be created
 DROP TABLE Customer CASCADE CONSTRAINTS;
 DROP TABLE Payment CASCADE CONSTRAINTS;
 DROP TABLE Card CASCADE CONSTRAINTS;
@@ -14,6 +17,7 @@ DROP TABLE Woodwind CASCADE CONSTRAINTS;
 DROP TABLE Strings CASCADE CONSTRAINTS;
 DROP TABLE Brass CASCADE CONSTRAINTS;
 
+--Create the Customer table
 CREATE TABLE Customer(
 	Customer_ID VARCHAR2(20) NOT NULL,
 	Customer_First_Name VARCHAR2(20),
@@ -33,6 +37,7 @@ CREATE TABLE Customer(
 	CONSTRAINT C_PK PRIMARY KEY (Customer_ID)
 );
 
+--Create the Payment table
 CREATE TABLE Payment(
 	Payment_ID VARCHAR2(20) NOT NULL, 
 	Customer_ID VARCHAR2(20) NOT NULL,
@@ -46,6 +51,7 @@ CREATE TABLE Payment(
 	CONSTRAINT PCustomer_FK FOREIGN KEY (Customer_ID) REFERENCES Customer (Customer_ID) ON DELETE CASCADE
 );
 
+--Create the Card table
 CREATE TABLE Card(
 	CDPayment_ID VARCHAR (20),
 	Service_Provider CHAR(25),
@@ -56,6 +62,7 @@ CREATE TABLE Card(
 	CONSTRAINT CDPayment_FK FOREIGN KEY (CDPayment_ID) REFERENCES Payment(Payment_ID) ON DELETE CASCADE
 );
 
+--Create the Cash table
 CREATE TABLE Cash(
 	CHPayment_ID VARCHAR2(20) NOT NULL,
 	Currency CHAR(10),
@@ -66,6 +73,7 @@ CREATE TABLE Cash(
 	CONSTRAINT CHPayment_FK FOREIGN KEY (CHPayment_ID) REFERENCES Payment(Payment_ID) ON DELETE CASCADE
 );
 
+--Create the Ccheck table
 CREATE TABLE Ccheck(
 	CKPayment_ID VARCHAR2(20) NOT NULL,
 	Routing_Number NUMBER(25),
@@ -77,6 +85,7 @@ CREATE TABLE Ccheck(
 	CONSTRAINT CKPayment_FK FOREIGN KEY (CKPayment_ID) REFERENCES Payment(Payment_ID)  ON DELETE CASCADE
 );
 
+--Create the C_Order table
 CREATE TABLE C_Order(
 	Order_ID VARCHAR2(30) NOT NULL,
 	Payment_ID VARCHAR2(20) NOT NULL, 
@@ -86,6 +95,7 @@ CREATE TABLE C_Order(
 	CONSTRAINT OPayment_FK FOREIGN KEY (Payment_ID) REFERENCES payment(Payment_ID) ON DELETE CASCADE
 );
 
+--Create the Supplier table
 CREATE TABLE Supplier(
 	Supplier_ID VARCHAR2(20),
 	FaxNumber VARCHAR2(20),
@@ -93,6 +103,7 @@ CREATE TABLE Supplier(
 	CONSTRAINT Supplier_PK PRIMARY KEY(Supplier_ID)
 );
 
+--Create the Shipment table
 CREATE TABLE Shipment(
 	Shipment_ID VARCHAR2(20),
 	Tracking_Number VARCHAR2(50),
@@ -101,6 +112,7 @@ CREATE TABLE Shipment(
 	CONSTRAINT Shipment_PK PRIMARY KEY(Shipment_ID)
 );
 
+--Create the Instrument table
 CREATE TABLE Instrument(
 	Instrument_SKU NUMBER(6, 0),
 	Instrument_Name VARCHAR2(20),
@@ -113,6 +125,7 @@ CREATE TABLE Instrument(
 	CONSTRAINT Instrument_PK PRIMARY KEY(Instrument_SKU)	
 );
 
+--Create the Percussion table
 CREATE TABLE Percussion(
 	PInstrumentSKU NUMBER(6, 0),
 	Material VARCHAR2(20),
@@ -122,6 +135,7 @@ CREATE TABLE Percussion(
 	CONSTRAINT PercussionInstrument_FK FOREIGN KEY(PInstrumentSKU) REFERENCES Instrument(Instrument_SKU)
 );
 
+--Create the Woodwind table
 CREATE TABLE Woodwind(
 	WInstrumentSKU NUMBER(6, 0),
 	Reed_Type VARCHAR2(20),
@@ -132,6 +146,7 @@ CREATE TABLE Woodwind(
 	CONSTRAINT WoodwindInstrument_FX FOREIGN KEY(WInstrumentSKU) REFERENCES Instrument(Instrument_SKU)
 );
 
+--Create the Strings table
 CREATE TABLE Strings(
 	SInstrumentSKU NUMBER(6, 0),
 	String_Type VARCHAR2(20),
@@ -142,6 +157,7 @@ CREATE TABLE Strings(
 	CONSTRAINT StringsInstrument_FK FOREIGN KEY(SInstrumentSKU) REFERENCES Instrument(Instrument_SKU)
 );
 
+--Create the Brass table
 CREATE TABLE Brass(
 	BInstrumentSKU NUMBER(6, 0),
 	Metal_Type VARCHAR2(20),

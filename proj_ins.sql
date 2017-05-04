@@ -1,3 +1,5 @@
+--IS410 Term Project (Deliverable 4)
+--By: Brett Allen, Akhil Naraparaju, and Justin Chan
 --Create commands for inserting sample data INTO all tables
 
 INSERT INTO Customer(Customer_ID, 
@@ -84,33 +86,33 @@ Customer_Gender,
 Customer_Date_Created) 
 VALUES ('W-832-360-298', 'Marco', 'Pollo', 'mpollo@pollo.com', 'pollo', 'MD', '23525', '8023 Mappico Ln', '443-521-3098', '12-MAY-1990', 'M', '11-AUG-2015');
 
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000001', 'C-120-360-298', 1200.95, 72.06, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000001', 'C-120-360-298', 4899.99, 293.99, 'Card');
 INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000002', 'A-315-745-357', 1200.95, 72.06, 'Card');
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000003', 'C-120-360-298', 1200.95, 72.06, 'Card');
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000004', 'A-315-745-357', 1200.95, 72.06, 'Card');
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000005', 'C-120-360-298', 1200.95, 72.06, 'Card');
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000006', 'A-315-745-357', 1200.95, 72.06, 'Card'); 
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000003', 'C-120-360-298', 799.95, 47.99, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000004', 'A-315-745-357', 349.99, 20.99, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000005', 'C-120-360-298', 899.95, 53.99, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000006', 'A-315-745-357', 199.99, 11.99, 'Card'); 
 
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000007', 'C-120-360-298', 1200.95, 72.06, 'Cash');
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000008', 'C-120-360-298', 1200.95, 72.06, 'Cash');
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000009', 'C-120-360-298', 1200.95, 72.06, 'Cash');
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000010', 'C-120-360-298', 1200.95, 72.06, 'Cash');
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000011', 'C-120-360-298', 1200.95, 72.06, 'Cash');
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000012', 'C-120-360-298', 1200.95, 72.06, 'Cash');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000007', 'C-120-360-298', 49.99, 2.99, 'Cash');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000008', 'C-120-360-298', 9789.95, 587.39, 'Cash');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000009', 'C-120-360-298', 4521.95, 271.317, 'Cash');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000010', 'C-120-360-298', 1220.99, 73.25, 'Cash');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000011', 'C-120-360-298', 549.99, 32.99, 'Cash');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000012', 'C-120-360-298', 677.38, 40.64, 'Cash');
 
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000013', 'C-120-360-298', 1200.95, 72.06, 'Check');
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000014', 'C-120-360-298', 1200.95, 72.06, 'Check');
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000015', 'C-120-360-298', 1200.95, 72.06, 'Check');
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000016', 'C-120-360-298', 1200.95, 72.06, 'Check');
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000017', 'C-120-360-298', 1200.95, 72.06, 'Check');
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000018', 'C-120-360-298', 1200.95, 72.06, 'Check');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000013', 'C-120-360-298', 777.99, 46.6794, 'Check');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000014', 'C-120-360-298', 238.98, 14.33, 'Check');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000015', 'C-120-360-298', 1234.56, 74.07, 'Check');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000016', 'C-120-360-298', 7899.99, 473.99, 'Check');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000017', 'C-120-360-298', 1440.99, 86.45, 'Check');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000018', 'C-120-360-298', 1040.49, 62.42, 'Check');
 
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000019', 'C-120-360-298', 1200.95, 72.06, 'Card');
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000020', 'C-120-360-298', 1200.95, 72.06, 'Card');
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000021', 'C-120-360-298', 1200.95, 72.06, 'Card');
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000022', 'C-120-360-298', 1200.95, 72.06, 'Card');
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000023', 'C-120-360-298', 1200.95, 72.06, 'Card');
-INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000024', 'C-120-360-298', 1200.95, 72.06, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000019', 'C-120-360-298', 8889.95, 533.39, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000020', 'C-120-360-298', 7894.95, 473.69, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000021', 'C-120-360-298', 6500.95, 390.05, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000022', 'C-120-360-298', 7200.95, 432.05, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000023', 'C-120-360-298', 4800.95, 288.05, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('000000024', 'C-120-360-298', 1600.95, 96.05, 'Card');
 
 INSERT INTO Card(CDPayment_ID, Service_Provider) VALUES ('000000001', 'Master Card');
 INSERT INTO Card(CDPayment_ID, Service_Provider) VALUES ('000000002', 'Visa Card');
@@ -127,11 +129,11 @@ INSERT INTO Cash(CHPayment_ID, Currency) VALUES ('000000011', 'USD');
 INSERT INTO Cash(CHPayment_ID, Currency) VALUES ('000000012', 'USD');
 
 INSERT INTO Ccheck(CKPayment_ID, Routing_Number, Account_Number, Check_Number, Bank_Information) VALUES ('000000013', 123456789, 1234567891, 100, 'PRIVATE DATA');
-INSERT INTO Ccheck(CKPayment_ID, Routing_Number, Account_Number, Check_Number, Bank_Information) VALUES ('000000014', 123456789, 1234567891, 100, 'PRIVATE DATA');
-INSERT INTO Ccheck(CKPayment_ID, Routing_Number, Account_Number, Check_Number, Bank_Information) VALUES ('000000015', 123456789, 1234567891, 100, 'PRIVATE DATA');
-INSERT INTO Ccheck(CKPayment_ID, Routing_Number, Account_Number, Check_Number, Bank_Information) VALUES ('000000016', 123456789, 1234567891, 100, 'PRIVATE DATA');
-INSERT INTO Ccheck(CKPayment_ID, Routing_Number, Account_Number, Check_Number, Bank_Information) VALUES ('000000017', 123456789, 1234567891, 100, 'PRIVATE DATA');
-INSERT INTO Ccheck(CKPayment_ID, Routing_Number, Account_Number, Check_Number, Bank_Information) VALUES ('000000018', 123456789, 1234567891, 100, 'PRIVATE DATA');
+INSERT INTO Ccheck(CKPayment_ID, Routing_Number, Account_Number, Check_Number, Bank_Information) VALUES ('000000014', 987654321, 9876543210, 489, 'PRIVATE DATA');
+INSERT INTO Ccheck(CKPayment_ID, Routing_Number, Account_Number, Check_Number, Bank_Information) VALUES ('000000015', 434533224, 6544233456, 111, 'PRIVATE DATA');
+INSERT INTO Ccheck(CKPayment_ID, Routing_Number, Account_Number, Check_Number, Bank_Information) VALUES ('000000016', 876545667, 3434234213, 249, 'PRIVATE DATA');
+INSERT INTO Ccheck(CKPayment_ID, Routing_Number, Account_Number, Check_Number, Bank_Information) VALUES ('000000017', 654654334, 4564845212, 879, 'PRIVATE DATA');
+INSERT INTO Ccheck(CKPayment_ID, Routing_Number, Account_Number, Check_Number, Bank_Information) VALUES ('000000018', 234665654, 4545675673, 238, 'PRIVATE DATA');
 
 INSERT INTO C_Order(Order_ID, Payment_ID, Quantity_Ordered) VALUES ('01', '000000001', 20);
 INSERT INTO C_Order(Order_ID, Payment_ID, Quantity_Ordered) VALUES ('02', '000000002', 20);
@@ -156,33 +158,33 @@ INSERT INTO Shipment(Shipment_ID, Tracking_Number, FOB_Shipping_Cost) VALUES ('0
 INSERT INTO Shipment(Shipment_ID, Tracking_Number, FOB_Shipping_Cost) VALUES ('000000006', '1Z 999 AA1 01 2345 6784', 499.99);
 INSERT INTO Shipment(Shipment_ID, Tracking_Number, FOB_Shipping_Cost) VALUES ('000000007', '1Z 999 AA1 01 2345 6784', 499.99);
 
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (123456, 'Guitar', 599.99, 4.56, 'Percussion');
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (254096, 'Guitar', 599.99, 4.56, 'Percussion');
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (254231, 'Guitar', 599.99, 4.56, 'Percussion');
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (211134, 'Guitar', 599.99, 4.56, 'Percussion');
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (051566, 'Guitar', 599.99, 4.56, 'Percussion');
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (458926, 'Guitar', 599.99, 4.56, 'Percussion');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (123456, 'Cymbals', 599.99, 4.56, 'Percussion');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (254096, 'Triangle', 499.99, 1.56, 'Percussion');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (254231, 'Xylophone', 249.99, 9.36, 'Percussion');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (211134, 'Drum Kit', 799.99, 10.56, 'Percussion');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (051566, 'Tambourine', 199.99, 2.56, 'Percussion');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (458926, 'Marimba', 99.99, 1.56, 'Percussion');
 
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (125456, 'Guitar', 599.99, 4.56, 'Woodwind');
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (143466, 'Guitar', 599.99, 4.56, 'Woodwind');
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (183756, 'Guitar', 599.99, 4.56, 'Woodwind');
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (193456, 'Guitar', 599.99, 4.56, 'Woodwind');
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (423556, 'Guitar', 599.99, 4.56, 'Woodwind');
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (913256, 'Guitar', 599.99, 4.56, 'Woodwind');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (125456, 'Bagpipes', 199.99, 4.56, 'Woodwind');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (143466, 'Clarinet', 599.99, 3.56, 'Woodwind');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (183756, 'Alto Saxophone', 1299.99, 8.53, 'Woodwind');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (193456, 'Flute', 199.99, 3.26, 'Woodwind');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (423556, 'Piccolo', 349.99, 5.56, 'Woodwind');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (913256, 'Bassoon', 689.99, 4.56, 'Woodwind');
 
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (153456, 'Guitar', 599.99, 4.56, 'Strings');
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (133456, 'Guitar', 599.99, 4.56, 'Strings');
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (123416, 'Guitar', 599.99, 4.56, 'Strings');
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (143156, 'Guitar', 599.99, 4.56, 'Strings');
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (163426, 'Guitar', 599.99, 4.56, 'Strings');
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (789456, 'Guitar', 599.99, 4.56, 'Strings');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (153456, 'Guitar', 1777.77, 7.56, 'Strings');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (133456, 'Banjo', 489.99, 2.56, 'Strings');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (123416, 'Cello', 698.99, 9.56, 'Strings');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (143156, 'Harp', 349.99, 15.56, 'Strings');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (163426, 'Lute', 419.99, 6.56, 'Strings');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (789456, 'Violin', 899.99, 4.56, 'Strings');
 
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (124556, 'Guitar', 599.99, 4.56, 'Brass');
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (117156, 'Guitar', 599.99, 4.56, 'Brass');
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (124486, 'Guitar', 599.99, 4.56, 'Brass');
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (143456, 'Guitar', 599.99, 4.56, 'Brass');
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (123856, 'Guitar', 599.99, 4.56, 'Brass');
-INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (183446, 'Guitar', 599.99, 4.56, 'Brass');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (124556, 'French Horn', 1249.99, 2.56, 'Brass');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (117156, 'Sax Horn', 1899.99, 6.56, 'Brass');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (124486, 'Trombone', 499.99, 4.56, 'Brass');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (143456, 'Trumpet', 299.99, 9.56, 'Brass');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (123856, 'Tuba', 249.99, 2.56, 'Brass');
+INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (183446, 'Trombone', 399.99, 4.56, 'Brass');
 
 INSERT INTO Percussion(PInstrumentSKU, Material, Number_Components) VALUES (123456, 'Cow Skin', 56);
 INSERT INTO Percussion(PInstrumentSKU, Material, Number_Components) VALUES (254096, 'Cow Skin', 56);
@@ -192,22 +194,22 @@ INSERT INTO Percussion(PInstrumentSKU, Material, Number_Components) VALUES (0515
 INSERT INTO Percussion(PInstrumentSKU, Material, Number_Components) VALUES (458926, 'Cow Skin', 56);
 
 INSERT INTO Woodwind(WInstrumentSKU, Reed_Type) VALUES (125456, 'Single');
-INSERT INTO Woodwind(WInstrumentSKU, Reed_Type) VALUES (143466, 'Single');
-INSERT INTO Woodwind(WInstrumentSKU, Reed_Type) VALUES (183756, 'Single');
-INSERT INTO Woodwind(WInstrumentSKU, Reed_Type) VALUES (193456, 'Single');
-INSERT INTO Woodwind(WInstrumentSKU, Reed_Type) VALUES (423556, 'Single');
+INSERT INTO Woodwind(WInstrumentSKU, Reed_Type) VALUES (143466, 'Double');
+INSERT INTO Woodwind(WInstrumentSKU, Reed_Type) VALUES (183756, 'Quadruple');
+INSERT INTO Woodwind(WInstrumentSKU, Reed_Type) VALUES (193456, 'Free');
+INSERT INTO Woodwind(WInstrumentSKU, Reed_Type) VALUES (423556, 'Double');
 INSERT INTO Woodwind(WInstrumentSKU, Reed_Type) VALUES (913256, 'Single');
 
 INSERT INTO Strings(SInstrumentSKU, String_Type) VALUES(153456, 'Steel-Core');
-INSERT INTO Strings(SInstrumentSKU, String_Type) VALUES(133456, 'Steel-Core');
-INSERT INTO Strings(SInstrumentSKU, String_Type) VALUES(123416, 'Steel-Core');
-INSERT INTO Strings(SInstrumentSKU, String_Type) VALUES(143156, 'Steel-Core');
-INSERT INTO Strings(SInstrumentSKU, String_Type) VALUES(163426, 'Steel-Core');
-INSERT INTO Strings(SInstrumentSKU, String_Type) VALUES(789456, 'Steel-Core');
+INSERT INTO Strings(SInstrumentSKU, String_Type) VALUES(133456, 'Gut');
+INSERT INTO Strings(SInstrumentSKU, String_Type) VALUES(123416, 'Synthetic-Core');
+INSERT INTO Strings(SInstrumentSKU, String_Type) VALUES(143156, 'Gut');
+INSERT INTO Strings(SInstrumentSKU, String_Type) VALUES(163426, 'Gut');
+INSERT INTO Strings(SInstrumentSKU, String_Type) VALUES(789456, 'Synthetic-Core');
 
-INSERT INTO Brass(BInstrumentSKU, Metal_Type) VALUES (124556, 'Yellow Brass');
+INSERT INTO Brass(BInstrumentSKU, Metal_Type) VALUES (124556, 'Gold Brass');
 INSERT INTO Brass(BInstrumentSKU, Metal_Type) VALUES (117156, 'Yellow Brass');
-INSERT INTO Brass(BInstrumentSKU, Metal_Type) VALUES (124486, 'Yellow Brass');
-INSERT INTO Brass(BInstrumentSKU, Metal_Type) VALUES (143456, 'Yellow Brass');
-INSERT INTO Brass(BInstrumentSKU, Metal_Type) VALUES (123856, 'Yellow Brass');
+INSERT INTO Brass(BInstrumentSKU, Metal_Type) VALUES (124486, 'Red Brass');
+INSERT INTO Brass(BInstrumentSKU, Metal_Type) VALUES (143456, 'Red Brass');
+INSERT INTO Brass(BInstrumentSKU, Metal_Type) VALUES (123856, 'Gold Brass');
 INSERT INTO Brass(BInstrumentSKU, Metal_Type) VALUES (183446, 'Yellow Brass');
