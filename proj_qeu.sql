@@ -39,6 +39,7 @@ CREATE VIEW Cheap_Instrument AS
 	FROM Instrument 
 	WHERE Instrument_Price < 100;
 
+--Display all tables
 SELECT * FROM Customer;
 SELECT * FROM Payment;
 SELECT * FROM Card;
