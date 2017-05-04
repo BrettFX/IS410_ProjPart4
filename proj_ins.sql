@@ -37,32 +37,29 @@ INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES
 INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
 INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
 
-CDPayment_ID VARCHAR (20),
-Service_Provider CHAR(25),
+INSERT INTO Card(CDPayment_ID, Service_Provider) VALUES ('1111-2222-3333-4444', 'Master Card');
+INSERT INTO Card(CDPayment_ID, Service_Provider) VALUES ('1111-2222-3333-4444', 'Master Card');
+INSERT INTO Card(CDPayment_ID, Service_Provider) VALUES ('1111-2222-3333-4444', 'Master Card');
+INSERT INTO Card(CDPayment_ID, Service_Provider) VALUES ('1111-2222-3333-4444', 'Master Card');
+INSERT INTO Card(CDPayment_ID, Service_Provider) VALUES ('1111-2222-3333-4444', 'Master Card');
+INSERT INTO Card(CDPayment_ID, Service_Provider) VALUES ('1111-2222-3333-4444', 'Master Card');
+INSERT INTO Card(CDPayment_ID, Service_Provider) VALUES ('1111-2222-3333-4444', 'Master Card');
 
-INSERT INTO Card(CDPayment_ID, Service_Provider) VALUES (  ) ;
-INSERT INTO Card VALUES (  ) ;
-INSERT INTO Card VALUES (  ) ;
-INSERT INTO Card VALUES (  ) ;
-INSERT INTO Card VALUES (  ) ;
-INSERT INTO Card VALUES (  ) ;
-INSERT INTO Card VALUES (  ) ;
+INSERT INTO Cash(CHPayment_ID, Currency) VALUES ('CH1', 'USD');
+INSERT INTO Cash(CHPayment_ID, Currency) VALUES ('CH2', 'USD');
+INSERT INTO Cash(CHPayment_ID, Currency) VALUES ('CH3', 'USD');
+INSERT INTO Cash(CHPayment_ID, Currency) VALUES ('CH4', 'USD');
+INSERT INTO Cash(CHPayment_ID, Currency) VALUES ('CH5', 'USD');
+INSERT INTO Cash(CHPayment_ID, Currency) VALUES ('CH6', 'USD');
+INSERT INTO Cash(CHPayment_ID, Currency) VALUES ('CH7', 'USD');
 
-INSERT INTO Cash VALUES (  ) ;
-INSERT INTO Cash VALUES (  ) ;
-INSERT INTO Cash VALUES (  ) ;
-INSERT INTO Cash VALUES (  ) ;
-INSERT INTO Cash VALUES (  ) ;
-INSERT INTO Cash VALUES (  ) ;
-INSERT INTO Cash VALUES (  ) ;
-
-INSERT INTO Ccheck VALUES (  ) ;
-INSERT INTO Ccheck VALUES (  ) ;
-INSERT INTO Ccheck VALUES (  ) ;
-INSERT INTO Ccheck VALUES (  ) ;
-INSERT INTO Ccheck VALUES (  ) ;
-INSERT INTO Ccheck VALUES (  ) ;
-INSERT INTO Ccheck VALUES (  ) ;
+INSERT INTO Ccheck(CKPayment_ID, Routing_Number, Account_Number, Check_Number, Bank_Information) VALUES ('CK1', 123456789, 1234567891, 100, 'PRIVATE DATA');
+INSERT INTO Ccheck(CKPayment_ID, Routing_Number, Account_Number, Check_Number, Bank_Information) VALUES ('CK1', 123456789, 1234567891, 100, 'PRIVATE DATA');
+INSERT INTO Ccheck(CKPayment_ID, Routing_Number, Account_Number, Check_Number, Bank_Information) VALUES ('CK1', 123456789, 1234567891, 100, 'PRIVATE DATA');
+INSERT INTO Ccheck(CKPayment_ID, Routing_Number, Account_Number, Check_Number, Bank_Information) VALUES ('CK1', 123456789, 1234567891, 100, 'PRIVATE DATA');
+INSERT INTO Ccheck(CKPayment_ID, Routing_Number, Account_Number, Check_Number, Bank_Information) VALUES ('CK1', 123456789, 1234567891, 100, 'PRIVATE DATA');
+INSERT INTO Ccheck(CKPayment_ID, Routing_Number, Account_Number, Check_Number, Bank_Information) VALUES ('CK1', 123456789, 1234567891, 100, 'PRIVATE DATA');
+INSERT INTO Ccheck(CKPayment_ID, Routing_Number, Account_Number, Check_Number, Bank_Information) VALUES ('CK1', 123456789, 1234567891, 100, 'PRIVATE DATA');
 
 INSERT INTO C_Order VALUES (  ) ;
 INSERT INTO C_Order VALUES (  ) ;

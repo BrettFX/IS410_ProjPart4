@@ -44,6 +44,8 @@ CREATE TABLE Card(
 CDPayment_ID VARCHAR (20),
 Service_Provider CHAR(25),
 
+CONSTRAINT ServiceProvider_CK CHECK(Service_Provider IN('Master Card', 'Visa', 'American Express', 'Discover')),
+
 CONSTRAINT Card_PK PRIMARY KEY (CDPayment_ID),
 CONSTRAINT CDPayment_FK FOREIGN KEY (CDPayment_ID) REFERENCES Payment(Payment_ID) ON DELETE CASCADE
 );
@@ -51,6 +53,8 @@ CONSTRAINT CDPayment_FK FOREIGN KEY (CDPayment_ID) REFERENCES Payment(Payment_ID
 CREATE TABLE Cash(
 CHPayment_ID VARCHAR2(20) NOT NULL,
 Currency CHAR(10),
+
+CONSTRAINT Currency_CK CHECK(Currency IN('USD', 'EURO')),
 
 CONSTRAINT Cash_PK PRIMARY KEY (CHPayment_ID),
 CONSTRAINT CHPayment_FK FOREIGN KEY (CHPayment_ID) REFERENCES Payment(Payment_ID) ON DELETE CASCADE
