@@ -1,6 +1,9 @@
 --Make at least ten different sample queries
+DROP VIEW Customer_Payment_Instersection;
+DROP VIEW Customer_Payment_Union;
+DROP VIEW Cheap_Instrument;
 
-SELECT FIRST_NAME FROM CUSTOMER WHERE CUSTOMER_PHONE='443-255-1892';
+SELECT Customer_First_Name FROM Customer WHERE Customer_Phone='443-255-1892';
 
 --Required querries:
 SELECT Customer_ID FROM Customer WHERE Customer_State='FL' MINUS (SELECT Customer_ID FROM Payment WHERE Payment_ID ='000000001');
@@ -11,18 +14,18 @@ SELECT Customer.* FROM Customer, Payment WHERE Customer.Customer_ID = Payment.Cu
 SELECT AVG(Subtotal) FROM Payment GROUP BY Payment_Type;
 
 CREATE VIEW Customer_Payment_Instersection AS
-	SELECT Customer_ID 
+	(SELECT Customer_ID 
 	FROM Customer 
-	WHERE Customer_State='MD' 
+	WHERE Customer_State='MD' )
 	INTERSECT 
 	(SELECT Customer_ID 
 	FROM Payment 
 	WHERE Payment_ID ='000000001');
 	
 CREATE VIEW Customer_Payment_Union AS
-	SELECT Customer_ID 
+	(SELECT Customer_ID 
 	FROM Customer 
-	WHERE 
+	WHERE Customer_State='TX')
 	UNION 
 	(SELECT Customer_ID 
 	FROM Payment 
@@ -34,15 +37,15 @@ CREATE VIEW Cheap_Instrument AS
 	FROM Instrument 
 	WHERE Instrument_Price < 100;
 
-SELECT * Customer;
-SELECT * Payment;
-SELECT * Card;
-SELECT * Ccheck;
-SELECT * C_Order;
-SELECT * Supplier;
-SELECT * Shipment;
-SELECT * Instrument;
-SELECT * Percussion;
-SELECT * Woodwind;
-SELECT * Strings;
-SELECT * Brass;
+SELECT * FROM Customer;
+SELECT * FROM Payment;
+SELECT * FROM Card;
+SELECT * FROM Ccheck;
+SELECT * FROM C_Order;
+SELECT * FROM Supplier;
+SELECT * FROM Shipment;
+SELECT * FROM Instrument;
+SELECT * FROM Percussion;
+SELECT * FROM Woodwind;
+SELECT * FROM Strings;
+SELECT * FROM Brass;
