@@ -23,15 +23,12 @@ CREATE TABLE Customer(
 	Customer_State CHAR (2),
 	Customer_Zipcode NUMBER(11),
 	Customer_Address VARCHAR2(50),
-	Customer_Phone NUMBER (10),
+	Customer_Phone VARCHAR2(16),
 	Customer_DOB DATE,
 	Customer_Gender CHAR(1),
-	Customer_Date_Created NUMBER(8),
+	Customer_Date_Created DATE,
 	
 	CONSTRAINT CustomerGender_CK CHECK(Customer_Gender IN('M', 'F')),
-
-	--Only permit customers that are 18 or older
-	--CONSTRAINT CustomerAge_CK CHECK((YEAR(SYSDATE) - YEAR(Customer_DOB)) >= 18),
 
 	CONSTRAINT C_PK PRIMARY KEY (Customer_ID)
 );
@@ -53,7 +50,7 @@ CREATE TABLE Card(
 	CDPayment_ID VARCHAR (20),
 	Service_Provider CHAR(25),
 
-	CONSTRAINT ServiceProvider_CK CHECK(Service_Provider IN('Master Card', 'Visa', 'American Express', 'Discover')),
+	CONSTRAINT ServiceProvider_CK CHECK(Service_Provider IN('Master Card', 'Visa Card', 'American Express Card', 'Discover Card')),
 
 	CONSTRAINT Card_PK PRIMARY KEY (CDPayment_ID),
 	CONSTRAINT CDPayment_FK FOREIGN KEY (CDPayment_ID) REFERENCES Payment(Payment_ID) ON DELETE CASCADE
@@ -107,8 +104,8 @@ CREATE TABLE Shipment(
 CREATE TABLE Instrument(
 	Instrument_SKU NUMBER(6, 0),
 	Instrument_Name VARCHAR2(20),
-	Instrument_Price NUMBER(4, 2),
-	Instrument_Weight NUMBER(3, 4),
+	Instrument_Price NUMBER(8, 2),
+	Instrument_Weight NUMBER(8, 4),
 	Instrument_Type VARCHAR2(16),
 	
 	CONSTRAINT InstrumentType_CK CHECK(Instrument_Type IN('Percussion', 'Woodwind', 'Strings', 'Brass')),
