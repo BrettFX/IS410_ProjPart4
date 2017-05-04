@@ -27,6 +27,8 @@ CREATE TABLE Customer(
 	Customer_DOB DATE,
 	Customer_Gender CHAR(1),
 	Customer_Date_Created NUMBER(8),
+	
+	CONSTRAINT CustomerGender_CK CHECK(Customer_Gender IN('M', 'F')),
 
 	--Only permit customers that are 18 or older
 	--CONSTRAINT CustomerAge_CK CHECK((YEAR(SYSDATE) - YEAR(Customer_DOB)) >= 18),
