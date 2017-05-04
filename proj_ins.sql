@@ -7,39 +7,40 @@ INSERT INTO Customer VALUES ('T-734-147-753', 'Ashley', 'Kim', 'akim@yapoo.com',
 INSERT INTO Customer VALUES ('A-574-573-672', 'Lee', 'Everett', 'leeveret@wded.com', 'clementine' 'MD' '28322', '1356 Hairshort Ave', '410-346-2566', '01-29-1992', 'M' '05-14-2016');
 INSERT INTO Customer VALUES ('W-832-360-298', 'Marco', 'Pollo', 'mpollo@pollo.com', 'pollo' 'MD' '23525', '8023 Mappico Ln', '443-521-3098', '05-12-1990', 'M' '08-11-2015') ;
 
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) 
+--Insert six rows into
 
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card'); 
 
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
 
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
-INSERT INTO Payment VALUES (  ) ;
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
 
-INSERT INTO Card VALUES (  ) ;
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
+INSERT INTO Payment(Payment_ID, Customer_ID, Subtotal, Tax, Payment_Type) VALUES ('123456789', 'C-120-360-298', 1200.95, 72.06, 'Card');
+
+CDPayment_ID VARCHAR (20),
+Service_Provider CHAR(25),
+
+INSERT INTO Card(CDPayment_ID, Service_Provider) VALUES (  ) ;
 INSERT INTO Card VALUES (  ) ;
 INSERT INTO Card VALUES (  ) ;
 INSERT INTO Card VALUES (  ) ;
