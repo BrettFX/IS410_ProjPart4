@@ -1,8 +1,8 @@
 --Create commands for creating all tables
 
-DROP TABLE customer CASCADE CONSTRAINT;
+DROP TABLE Customer CASCADE CONSTRAINT;
 
-CREATE TABLE customer(
+CREATE TABLE Customer(
 Customer_ID VARCHAR2(20) NOT NULL,
 Customer_First_Name VARCHAR2(20),
 Customer_Last_Name VARCHAR(20),
@@ -19,7 +19,7 @@ Customer_Date_Created NUMBER(8),
 CONSTRAINT t_pk PRIMARY KEY (Customer_ID)
 );
 
-CREATE TABLE payment(
+CREATE TABLE Payment(
 Payment_ID VARCHAR2(20) NOT NULL, 
 Customer_ID VARCHAR2(20) NOT NULL,
 Subtotal NUMBER (6,2),
@@ -30,7 +30,7 @@ CONSTRAINT t_pk PRIMARY KEY (Payment_ID),
 CONSTRAINT t_fk FOREIGN KEY (Customer_ID) REFERENCES Customer (Customer_ID) ON DELETE CASCADE
 );
 
-CREATE TABLE card(
+CREATE TABLE Card(
 CDPayment_ID VARCHAR (20),
 Service_Provider CHAR(25),
 
@@ -38,7 +38,7 @@ CONSTRAINT cd_pk_pk PRIMARY KEY (CDPayment_ID),
 CONSTRAINT cd_fk FOREIGN KEY (CDPayment_ID) REFERENCES Payment(Payment_ID) ON DELETE CASCADE
 );
 
-CREATE TABLE cash(
+CREATE TABLE Cash(
 CHPayment_ID VARCHAR2(20) NOT NULL,
 Currency CHAR(10),
 
@@ -57,7 +57,7 @@ CONSTRAINT ch_pk PRIMARY KEY (CKPayment_ID),
 CONSTRAINT ch_fk FOREIGN KEY (CKPayment_ID) REFERENCES Payment(Payment_ID)  ON DELETE CASCADE
 );
 
-CREATE TABLE c_Order(
+CREATE TABLE C_Order(
 Order_ID VARCHAR2(30) NOT NULL,
 Payment_ID VARCHAR2(20) NOT NULL, 
 Quantity_Ordered NUMBER(3),
