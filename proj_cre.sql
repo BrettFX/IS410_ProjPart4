@@ -1,67 +1,67 @@
 --Create commands for creating all tables
 
-drop table customer cascade constraint;
+DROP TABLE customer CASCADE CONSTRAINT;
 
-create table customer(
-Customer_ID varchar2(20) not null,
-Customer_First_Name varchar2(20),
-Customer_Last_Name varchar(20),
-Customer_Email varchar2(30),
-Customer_Password varchar2(15),
-Customer_State char (2),
-Customer_Zipcode number(11),
-Customer_Address varchar2(50),
-Customer_Phone number (10),
-Customer_DOB number(8),
-Customer_Gender char(1),
-Customer_Date_Created number(8),
+CREATE TABLE customer(
+Customer_ID VARCHAR2(20) NOT NULL,
+Customer_First_Name VARCHAR2(20),
+Customer_Last_Name VARCHAR(20),
+Customer_Email VARCHAR2(30),
+Customer_Password VARCHAR2(15),
+Customer_State CHAR (2),
+Customer_Zipcode NUMBER(11),
+Customer_Address VARCHAR2(50),
+Customer_Phone NUMBER (10),
+Customer_DOB NUMBER(8),
+Customer_Gender CHAR(1),
+Customer_Date_Created NUMBER(8),
 
-Constraint t_pk Primary Key (Customer_ID)
+CONSTRAINT t_pk PRIMARY KEY (Customer_ID)
 );
 
-create table payment(
-Payment_ID varchar2(20) not null, 
-Customer_ID varchar2(20) not null,
-Subtotal number (6,2),
-Tax number (6,2),
-Payment_Type char(5),
+CREATE TABLE payment(
+Payment_ID VARCHAR2(20) NOT NULL, 
+Customer_ID VARCHAR2(20) NOT NULL,
+Subtotal NUMBER (6,2),
+Tax NUMBER (6,2),
+Payment_Type CHAR(5),
 
-Constraint t_pk Primary Key (Payment_ID),
-Constraint t_fk Foreign Key (Customer_ID) references Customer (Customer_ID) on delete cascade
+CONSTRAINT t_pk PRIMARY KEY (Payment_ID),
+CONSTRAINT t_fk FOREIGN KEY (Customer_ID) REFERENCES Customer (Customer_ID) ON DELETE CASCADE
 );
 
-create table card(
-CDPayment_ID varchar (20),
-Service_Provider char(25),
+CREATE TABLE card(
+CDPayment_ID VARCHAR (20),
+Service_Provider CHAR(25),
 
-constraint cd_pk_pk primary key (CDPayment_ID),
-constraint cd_fk foreign key (CDPayment_ID) references Payment(Payment_ID) ON DELETE CASCADE
+CONSTRAINT cd_pk_pk PRIMARY KEY (CDPayment_ID),
+CONSTRAINT cd_fk FOREIGN KEY (CDPayment_ID) REFERENCES Payment(Payment_ID) ON DELETE CASCADE
 );
 
-create table cash(
-CHPayment_ID varchar2(20) not null,
-Currency char(10),
+CREATE TABLE cash(
+CHPayment_ID VARCHAR2(20) NOT NULL,
+Currency CHAR(10),
 
-constraint cs_pk primary key (CHPayment_ID),
-constraint cs_fk foreign key (CHPayment_ID) references Payment(Payment_ID) ON DELETE CASCADE
+CONSTRAINT cs_pk PRIMARY KEY (CHPayment_ID),
+CONSTRAINT cs_fk FOREIGN KEY (CHPayment_ID) REFERENCES Payment(Payment_ID) ON DELETE CASCADE
 );
 
-create table Ccheck(
-CKPayment_ID varchar2(20) not null,
-Routing_Number number(25),
-Account_Number number(25),
-Check_Number number(25),
-Bank_Information varchar(50),
+CREATE TABLE Ccheck(
+CKPayment_ID VARCHAR2(20) NOT NULL,
+Routing_Number NUMBER(25),
+Account_Number NUMBER(25),
+Check_Number NUMBER(25),
+Bank_Information VARCHAR(50),
 
-constraint ch_pk primary key (CKPayment_ID),
-constraint ch_fk foreign key (CKPayment_ID) references Payment(Payment_ID)  ON DELETE CASCADE
+CONSTRAINT ch_pk PRIMARY KEY (CKPayment_ID),
+CONSTRAINT ch_fk FOREIGN KEY (CKPayment_ID) REFERENCES Payment(Payment_ID)  ON DELETE CASCADE
 );
 
-create table c_Order(
-Order_ID varchar2(30) not null,
-Payment_ID varchar2(20) not null, 
-Quantity_Ordered number(3),
+CREATE TABLE c_Order(
+Order_ID VARCHAR2(30) NOT NULL,
+Payment_ID VARCHAR2(20) NOT NULL, 
+Quantity_Ordered NUMBER(3),
 
-constraint co_pk primary key (Order_ID),
-constraint co_fk foreign key (Payment_ID) references payment(Payment_ID) ON DELETE CASCADE
+CONSTRAINT co_pk PRIMARY KEY (Order_ID),
+CONSTRAINT co_fk FOREIGN KEY (Payment_ID) REFERENCES payment(Payment_ID) ON DELETE CASCADE
 );
