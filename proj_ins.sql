@@ -150,14 +150,6 @@ INSERT INTO Supplier(Supplier_ID, FaxNumber) VALUES ('erwq1234', '070-412-3456')
 INSERT INTO Supplier(Supplier_ID, FaxNumber) VALUES ('ablm1248', '070-412-3456');
 INSERT INTO Supplier(Supplier_ID, FaxNumber) VALUES ('fobl4595', '070-412-3456');
 
-INSERT INTO Shipment(Shipment_ID, Tracking_Number, FOB_Shipping_Cost) VALUES ('000000001', '1Z 999 AA1 01 2345 6784', 499.99);
-INSERT INTO Shipment(Shipment_ID, Tracking_Number, FOB_Shipping_Cost) VALUES ('000000002', '1Z 999 AA1 01 2345 6784', 499.99);
-INSERT INTO Shipment(Shipment_ID, Tracking_Number, FOB_Shipping_Cost) VALUES ('000000003', '1Z 999 AA1 01 2345 6784', 499.99);
-INSERT INTO Shipment(Shipment_ID, Tracking_Number, FOB_Shipping_Cost) VALUES ('000000004', '1Z 999 AA1 01 2345 6784', 499.99);
-INSERT INTO Shipment(Shipment_ID, Tracking_Number, FOB_Shipping_Cost) VALUES ('000000005', '1Z 999 AA1 01 2345 6784', 499.99);
-INSERT INTO Shipment(Shipment_ID, Tracking_Number, FOB_Shipping_Cost) VALUES ('000000006', '1Z 999 AA1 01 2345 6784', 499.99);
-INSERT INTO Shipment(Shipment_ID, Tracking_Number, FOB_Shipping_Cost) VALUES ('000000007', '1Z 999 AA1 01 2345 6784', 499.99);
-
 INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (123456, 'Cymbals', 599.99, 4.56, 'Percussion');
 INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (254096, 'Triangle', 499.99, 1.56, 'Percussion');
 INSERT INTO Instrument(Instrument_SKU, Instrument_Name, Instrument_Price, Instrument_Weight, Instrument_Type) VALUES (254231, 'Xylophone', 249.99, 9.36, 'Percussion');
@@ -213,3 +205,11 @@ INSERT INTO Brass(BInstrumentSKU, Metal_Type) VALUES (124486, 'Red Brass');
 INSERT INTO Brass(BInstrumentSKU, Metal_Type) VALUES (143456, 'Red Brass');
 INSERT INTO Brass(BInstrumentSKU, Metal_Type) VALUES (123856, 'Gold Brass');
 INSERT INTO Brass(BInstrumentSKU, Metal_Type) VALUES (183446, 'Yellow Brass');
+
+INSERT INTO Shipment(Shipment_ID, Instrument_SKU, Supplier_ID, Tracking_Number, FOB_Shipping_Cost) VALUES ('000000001', 254096, 'dbfd1534', '2B 999 AA1 01 2345 4567', 399.99);
+INSERT INTO Shipment(Shipment_ID, Instrument_SKU, Supplier_ID, Tracking_Number, FOB_Shipping_Cost) VALUES ('000000002', 123456, 'cylm4584', '1Z 821 AB2 02 1235 1684', 249.99);
+INSERT INTO Shipment(Shipment_ID, Instrument_SKU, Supplier_ID, Tracking_Number, FOB_Shipping_Cost) VALUES ('000000003', 211134, 'erwq1234', '5A 443 VC4 03 7347 6364', 199.99);
+INSERT INTO Shipment(Shipment_ID, Instrument_SKU, Supplier_ID, Tracking_Number, FOB_Shipping_Cost) VALUES ('000000004', 153456, 'fobl4595', '6F 782 RE1 04 4545 2712', 584.99);
+INSERT INTO Shipment(Shipment_ID, Instrument_SKU, Supplier_ID, Tracking_Number, FOB_Shipping_Cost) VALUES ('000000005', 163426, 'ablm1248', '3E 798 OP4 05 2775 1237', 231.99);
+INSERT INTO Shipment(Shipment_ID, Instrument_SKU, Supplier_ID, Tracking_Number, FOB_Shipping_Cost) VALUES ('000000006', 183446, 'dbfd1534', '1Q 123 TY9 06 9875 8723', 678.99);
+INSERT INTO Shipment(Shipment_ID, Instrument_SKU, Supplier_ID, Tracking_Number, FOB_Shipping_Cost) VALUES ('000000007', 913256, 'cylm4584', '8P 777 VA1 07 7745 4727', 187.99);

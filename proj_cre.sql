@@ -103,15 +103,6 @@ CREATE TABLE Supplier(
 	CONSTRAINT Supplier_PK PRIMARY KEY(Supplier_ID)
 );
 
---Create the Shipment table
-CREATE TABLE Shipment(
-	Shipment_ID VARCHAR2(20),
-	Tracking_Number VARCHAR2(50),
-	FOB_Shipping_Cost NUMBER(6, 2),
-	
-	CONSTRAINT Shipment_PK PRIMARY KEY(Shipment_ID)
-);
-
 --Create the Instrument table
 CREATE TABLE Instrument(
 	Instrument_SKU NUMBER(6, 0),
@@ -123,6 +114,19 @@ CREATE TABLE Instrument(
 	CONSTRAINT InstrumentType_CK CHECK(Instrument_Type IN('Percussion', 'Woodwind', 'Strings', 'Brass')),
 	
 	CONSTRAINT Instrument_PK PRIMARY KEY(Instrument_SKU)	
+);
+
+--Create the Shipment table
+CREATE TABLE Shipment(
+	Shipment_ID VARCHAR2(20),
+	Instrument_SKU NUMBER(6, 0),
+	Supplier_ID VARCHAR2(20),
+	Tracking_Number VARCHAR2(50),
+	FOB_Shipping_Cost NUMBER(6, 2),
+	
+	CONSTRAINT Shipment_PK PRIMARY KEY(Shipment_ID),
+	CONSTRAINT ShipmentInstr_FK FOREIGN KEY(Instrument_SKU) REFERENCES Instrument(Instrument_SKU) ON DELETE CASCADE,
+	CONSTRAINT ShippmentSupplier_FK FOREIGN KEY(Supplier_ID) REFERENCES Supplier(Supplier_ID) ON DELETE CASCADE
 );
 
 --Create the Percussion table
